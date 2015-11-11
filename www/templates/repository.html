@@ -1,12 +1,25 @@
  <ion-view title="Repository">
-        <ion-content>
-          <div class="list">
-            <div class="item">
-              @IonicFramework
-            </div>
-            <div class="item">
-              @DriftyTeam
-            </div>
-          </div>
-        </ion-content>
-      </ion-view>
+ <ion-content>
+ <div class="list list-inset">
+  <label class="item item-input">
+     <i class="icon ion-social-octocat placeholder-icon"></i>
+    <input type="text" placeholder="mlabouardy/Commit-Monitor" ng-model="repository">
+  </label>
+   <div class="item item-divider">
+    Repository visibility:
+  </div>
+   <label class="item item-radio">
+    <input type="radio" name="group">
+    <div class="item-content">Public</div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+  <label class="item item-radio">
+    <input type="radio" name="group">
+    <div class="item-content">Private</div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+  <button class="button button-balanced button-full" ng-click="getInfo(repository)">Sign In</button>
+ 
+</div>
+</ion-content>
+</ion-view>

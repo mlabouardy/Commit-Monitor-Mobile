@@ -2,5 +2,7 @@
 
  angular.module('starter.controllers')
  .controller('RepositoryCtrl', function ($scope) {
- 	//test dsd
+ 	$scope.getInfo=function(repository){
+ 		console.log(repository);
+ 	};
  });

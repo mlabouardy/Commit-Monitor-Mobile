@@ -34,6 +34,15 @@ angular.module('starter.controllers', [])
           controller: 'ManagerCtrl'
         }
       }
+    })
+    .state('tabs.info', {
+      url: "/info",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/info.html",
+          controller: 'HomeCtrl'
+        }
+      }
     });
    $urlRouterProvider.otherwise("/tab/home");
 });
